@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Search Form -->
+    <form id="search-form">
+      <input
+        type="search"
+        placeholder="Enter a city.."
+        required
+        class="search-input"
+        id="search-input"
+      />
+      <input type="submit" value="Search" class="search-button" />
+    </form>
+
+    <!-- Current Weather Display -->
+    <div class="row">
+      <h1 id="current-city">Prague</h1>
+      <!-- Dynamic city name -->
+      <span class="temperature" id="current-temperature">17°C</span>
+      <!-- Dynamic temperature -->
+    </div>
+
+    <!-- Additional Weather Details -->
+    <span class="current-weather">
+      <p id="current-date">
+        <!-- Dynamic date and time will be displayed here -->
+      </p>
+      <p>
+        Humidity: <strong id="humidity">82%</strong>, Wind:
+        <strong id="wind">4 km/h</strong>
+      </p>
+      <!-- Dynamic humidity and wind -->
+    </span>
+
+    <!-- Forecast Section (dynamic content inserted here) -->
+    <div class="forecast" id="forecast">
+      <!-- JavaScript will insert forecast items here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <em>The project was coded by <strong>Veronica Vuotto</strong></em>
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/app.js"></script>
+  </body>
+</html>
